@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>快活クラブ - お問い合わせ</title>
+        <meta name="description" content="AOKIグループが運営するシェアリングスペース業態です。テレワーク・シェアオフィスとしても最適な快活CLUB千葉中央店。無料Wi-Fi・電源完備・ドリンク飲み放題・ソフトクリームも食べ放題食べ放題！集中してお仕事はもちろん、気軽にカフェ代わり等、幅広くご利用いただけます。更に、外出・持込OKなので、コンビニ等でご購入された飲食物は、お部屋内でお召し上がりいただけます。">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="images/favicon.png">
+    </head>
+    
+    <body>
+        <div id="contact" class="big-bg">
+            <header>
+                <h1><a href="index.html"><img src="images/kaikatsuLogo.jpg" alt="快活クラブ ホーム"></a></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">ホーム</a></li>
+                        <li><a href="news.html">ニュース</a></li>
+                        <li><a href="guide.html">ご利用案内</a></li>
+                        <li><a href="facility.html">設備案内</a></li>
+                        <li><a href="room.html">席・部屋タイプ</a></li>
+                        <li><a href="food.html">お食事メニュー</a></li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <h2 class="page-title">お問い合わせ</h2>   
+        </div>
+        
+       <main>
+           <div class="title">
+                <ol>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li>お問い合わせ</li>
+                </ol>
+            </div>
+            <div class="main-wrapper">
+                <p><span>※</span>全ての項目を入力し送信してください。</p>
+                <form action="program.php" method="post"  onSubmit="return check()">
+                    <dl>
+                        <dt>お名前</dt>
+                        <dd>
+                            <input type="text" name="name" required placeholder="快活 太郎">
+                        </dd>
+                        <dt>ふりがな</dt>
+                        <dd>
+                            <input type="text" name="kana" required placeholder="かいかつ たろう">
+                        </dd>
+                        <dt>メールアドレス</dt>
+                        <dd>
+                            <input type="email" name="email" required placeholder="sample@test.com">
+                        </dd>
+                        <dt>お問い合わせ・ご質問内容</dt>
+                            <dd><textarea name="comment" cols="20" rows="5" required></textarea>
+                        </dd>
+                    </dl>
+                    <p class="submit">
+                        <input type="submit" name="submit" value="送信する">
+                    </p>
+                </form>
+                <section id="location">
+                    <div class="wrapper">
+                        <div class="location-info">
+                            <h3 class="sub-title">快活CLUB 千葉中央店</h3>
+                            <p>住所： 千葉県千葉市中央区富士見<br>2-7-13<br>電話： 043-227-2388<br>営業時間： 年中無休
+                            </p>
+                        </div>
+                        <div class="location-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m11!1m3!1d2774.895518326425!2d140.1177700822312!3d35.60998371121693!2m2!1f0!2f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x602285778f357ab7%3A0x3233541a04b07475!2z5b-r5rS7Q0xVQiDljYPokYnkuK3lpK7lupc!5e1!3m2!1sja!2sjp!4v1638682763324!5m2!1sja!2sjp" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </section>
+                <section id="sns">
+                    <div class="wrapper">
+                        <div class="sns-box">
+                        <h3 class="sub-title">Facebook</h3>
+                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fkaikatsu.jp%2F&tabs=timeline&width=340&height=315&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="340" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    </div>
+                    <div class="sns-box">
+                        <h3 class="sub-title">Twitter</h3>
+                        <a class="twitter-timeline" data-height="315" href="https://twitter.com/kaikatsuclub_jp?ref_src=twsrc%5Etfw">Tweets by kaikatsuclub_jp</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                    <div class="sns-box">
+                        <h3 class="sub-title">Youtube</h3>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/6rzlSROVSp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+        
+    <footer>
+        <ul>
+            <li><a href="sitemap.html">サイトマップ</a></li>
+            <li><a href="privacypolicy.html">プライバシーポリシー</a></li>
+        </ul>
+        <p><small>&copy;  COPYRIGHT KAIKATSU FRONTIER Inc. ALL RIGHTS RESERVED</small></p>
+    </footer>
+    <script src="js/script.js"></script>
+    </body>
+</html>
